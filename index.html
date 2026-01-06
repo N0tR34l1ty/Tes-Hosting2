@@ -5,7 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portofolio — Muhammad Rizqi Saputra</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <style>
+  
     /* --------------------
        Design notes:
        - Modern, simple, with subtle unique shapes and soft gradients
@@ -152,13 +154,20 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
 
 /* subtle reduce-motion respect */
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
-
+.social-btn i {
+  color: #fff !important;   /* Biar ga ikut warna biru */
+}
+.social-btn:hover i {
+  color: #0af !important;  /* Biru neon di hover, misalnya */
+}
   </style>
 </head>
 <body>
   <div class="wrap">
     <aside class="sidebar" aria-label="Sidebar">
-      <div class="avatar">MRS</div>
+     <div class="avatar">
+  <img src="Assets/PP.jpg" alt="Foto Profil" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:20px;">
+</div>
       <div class="name">Muhammad Rizqi Saputra</div>
       <div class="role">Pelajar · Full Stack Dev</div><nav id="nav">
     <a class="nav-link active" data-target="about">Tentang saya</a>
@@ -176,7 +185,7 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
   <header class="hero">
     <div class="headline">
       <h1>Hai, saya <span style="background:linear-gradient(90deg,#06b6d4,#ff7a6c);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Rizqi</span> — saya membuat antarmuka dan solusi yang sederhana tapi bermakna.</h1>
-      <p class="lead">Saya fokus pada Full staxk developer, automasi, analist, dan problem solving. Di bawah ada ringkasan kemampuan, riwayat pendidikan, proyek, dan kontak.</p>
+      <p class="lead">Saya fokus pada Full stack developer, automasi, analist, dan problem solving. Di bawah ada ringkasan kemampuan, riwayat pendidikan, proyek, dan kontak.</p>
       <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
         <a class="btn" id="downloadCV">Download CV</a>
         <a class="btn primary" id="contactMe">Hubungi</a>
@@ -206,7 +215,7 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
         <div class="bar" aria-hidden="true"><div class="fill" data-fill="2%"></div></div>
       </div>
       <div class="skill">
-        <strong>Versi Kontrol (Git)</strong>
+        <strong>PHP</strong>
         <div class="bar" aria-hidden="true"><div class="fill" data-fill="1%"></div></div>
       </div>
     </div>
@@ -231,9 +240,9 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
   <section id="achievements">
     <h2>Prestasi</h2>
     <div class="grid">
-      <div class="card"><strong> Prestasi</strong><small>Tahun</small></div>
-      <div class="card"><strong> Prestasi </strong><small>Tahun</small></div>
-      <div class="card"><strong> Prestasi </strong><small>Tahun</small></div>
+      <div class="card"><strong> Kosong </strong><small>Belun tersedia</small></div>
+      <div class="card"><strong> Kosong </strong><small>Belum tersedia</small></div>
+      <div class="card"><strong> Kosong </strong><small>Belum terse</small></div>
     </div>
   </section>
 
@@ -241,14 +250,14 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
     <h2>Pengalaman</h2>
     <div class="timeline">
       <div class="item">
-        <strong>Magang — Startup Lokal</strong>
-        <small>2023 · Frontend Intern</small>
-        <p>Mengerjakan UI dan meningkatkan performa halaman landing.</p>
+        <strong>Membuat Game Sederhana berbasis Turn Based</strong>
+        <small>2025 · Game developer </small>
+        <p>Membuat game sederhana berbasis turn based menggunakan bahasa pemrograman Python</p>
       </div>
       <div class="item">
-        <strong>Freelance</strong>
-        <small>2024 · Mini projects</small>
-        <p>Membangun website sederhana untuk UMKM.</p>
+        <strong>Membuat website Portofolio Interaktif</strong>
+        <small>2025 · Full stack developer</small>
+        <p>Membangun website Portofolio Interaktif menggunakan HTMl,CSS dan Js.</p>
       </div>
     </div>
   </section>
@@ -279,12 +288,43 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
     <div class="contact">
       <a class="btn" href="mailto:mrizqisaputra559k@gmail.com">mrizqisaputra559k@gmail.com</a>
       <a class="btn" href="#" id="copyEmail">Salin Email</a>
+      <div class="social-links">
+  <a class="social-btn" href="https://instagram.com/reiilcardinals" target="_blank">
+    <i class='bx bxl-instagram'></i>
+    <span>@reiilcardinals</span>
+  </a>
+  <a class="social-btn" href="https://github.com/N0tR34L1TY" target="_blank">
+    <i class='bx bxl-github'></i>
+    <span>N0tR34L1TY</span>
+  </a>
+  <a class="social-btn" href="https://linkedin.com/in/USERNAME" target="_blank">
+    <i class='bx bxl-linkedin-square'></i>
+    <span>MRizqiSaputra</span>
+  </a>
+  <a class="social-btn" href="https://wa.me/+6289505494130" target="_blank">
+    <i class='bx bxl-whatsapp'></i>
+    <span>+62 895 0549 4130</span>
+  </a>
+</div>
     </div>
   </section>
-
+<iframe
+  width="100%"
+  height="400"
+  style="border:0;"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps?q=-7.3076579,112.7289929&output=embed">
+</iframe>
+<footer style="text-align:center; margin-top:20px; font-size:14px; color:#666;">
+  &copy; 2025 Muhammad Rizqi Saputra. All rights reserved.
+</footer>
 </main>
-
-  </div>  <!-- lightweight JS for interactions -->  <script>
+  </div>  
+  
+  <!-- lightweight JS for interactions -->  
+  <script>
     // smooth scroll + active nav
     const links = Array.from(document.querySelectorAll('.nav-link'));
     const sections = links.map(l => document.getElementById(l.dataset.target));
@@ -358,9 +398,9 @@ section h2{margin:0 0 8px 0;font-size:1.05rem}
 
     // download CV (demo) -> generates a simple text CV as blob
     document.getElementById('downloadCV').addEventListener('click', ()=>{
-      const text = `Reii Nama\nPelajar\n\nRingkasan:\n- Frontend, Python\n\nKontak: email@example.com`;
+      const text = `Muhammad Rizqi Saputra\nPelajar\n\nRingkasan:\n- Full Stack Dev, Python\n\nKontak: mrizqisaputra559k@gmail.com`;
       const blob = new Blob([text],{type:'text/plain'});
-      const a = document.createElement('a');a.href = URL.createObjectURL(blob);a.download='CV-Reii.txt';a.click();URL.revokeObjectURL(a.href);
+      const a = document.createElement('a');a.href = URL.createObjectURL(blob);a.download='CV-M-Rizqi-S.txt';a.click();URL.revokeObjectURL(a.href);
     });
 
     // accessibility: allow keyboard nav for nav links
